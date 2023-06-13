@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>w3me 🎮</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="screen.css" />
+    <link rel="stylesheet" href="frame.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Space+Mono&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="starting()">
+    <div class="outer-box">
+      <div class="top-line">
+        <div class="left-box"></div>
+        <div class="middle-box">
+          <span class="off-btn">off</span>
+          <div class="switch-border">
+            <label for="checkBox" class="switch">
+              <input type="checkbox" id="checkBox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <span class="on-btn">on</span>
+        </div>
+        <div class="right-box"></div>
+      </div>
+
+      <div class="on-off-signal"></div>
+
+      <!-- Game -->
+      <div class="game">
+        <div class="game-screen">
+          <!-- Flashing arrow -->
+          <!-- <img
+            id="scrollUp"
+            class="arrow flashing arrow-up"
+            src="img/assets/arrow-up.svg"
+          />
+          <img
+            id="scrollDown"
+            class="arrow flashing arrow-down"
+            src="img/assets/arrow-down.svg"
+          /> -->
+          <!-- Hero -->
+          <div class="hero-section">
+            <div class="logo-main">
+              <span class="logo-font logo-color" id="logo-w">E</span>
+              <span class="logo-font logo-color" id="logo-3">E</span>
+              <span class="logo-font logo-color" id="logo-m">E</span>
+              <span class="logo-font logo-color" id="logo-e">E</span>
+            </div>
+
+            <div class="hero-title">Ready Player One 🎮</div>
+          </div>
+
+          <!-- Main -->
+          <div id="main">
+            <div class="paragraph word-big-font">
+              In web3, projects build in the open
+            </div>
+
+            <div class="main-container">
+              <!-- <div class="main-overlay"> -->
+              <div class="front-container">
+                <div class="word-spacing">
+                  <div id="word1" class="word-big-font">
+                    <!-- need a separate div to get the center of word -->
+                    Anyone can build the next big thing
+                  </div>
+                </div>
+
+                <div class="word-spacing">
+                  <div id="word2" class="word-big-font">
+                    Projects are always launching
+                  </div>
+                </div>
+
+                <div class="word-spacing">
+                  <div id="word3" class="word-big-font">
+                    Each offering a unique proposition
+                  </div>
+                </div>
+
+                <div class="word-spacing">
+                  <div id="word4" class="word-big-font">
+                    Each iterating its approach
+                  </div>
+                </div>
+
+                <div class="word-spacing">
+                  <div id="word5" class="word-big-font">
+                    As they find their audience in the open world
+                  </div>
+                </div>
+
+                <div class="word-spacing">
+                  <div id="word-last" class="word-big-font">
+                    How would you find yours?
+                  </div>
+                </div>
+              </div>
+
+              <div class="back-container">
+                <div class="icon-center">
+                  <div id="honeycomb-row-1">
+                    <img
+                      class="icon overlay hidden"
+                      id="icon1"
+                      src="img/icons/btc.png"
+                    />
+                  </div>
+
+                  <div id="honeycomb-row-2">
+                    <img class="icon overlay image-slot hidden" id="icon2a" />
+                    <img class="icon overlay image-slot hidden" id="icon2b" />
+                    <img class="icon overlay image-slot hidden" id="icon2c" />
+                    <img class="icon overlay image-slot hidden" id="icon2d" />
+                    <img class="icon overlay image-slot hidden" id="icon2e" />
+                    <img class="icon overlay image-slot hidden" id="icon2f" />
+                  </div>
+
+                  <div id="honeycomb-row-3">
+                    <img class="icon overlay image-slot hidden" id="icon3a" />
+                    <img class="icon overlay image-slot hidden" id="icon3b" />
+                    <img class="icon overlay image-slot hidden" id="icon3c" />
+                    <img class="icon overlay image-slot hidden" id="icon3d" />
+                    <img class="icon overlay image-slot hidden" id="icon3e" />
+                    <img class="icon overlay image-slot hidden" id="icon3f" />
+                    <img class="icon overlay image-slot hidden" id="icon3g" />
+                    <img class="icon overlay image-slot hidden" id="icon3h" />
+                    <img class="icon overlay image-slot hidden" id="icon3i" />
+                    <img class="icon overlay image-slot hidden" id="icon3j" />
+                    <img class="icon overlay image-slot hidden" id="icon3k" />
+                    <img class="icon overlay image-slot hidden" id="icon3l" />
+                  </div>
+
+                  <div id="honeycomb-row-4">
+                    <img class="icon overlay image-slot hidden" id="icon4a" />
+                    <img class="icon overlay image-slot hidden" id="icon4b" />
+                    <img class="icon overlay image-slot hidden" id="icon4c" />
+                    <img class="icon overlay image-slot hidden" id="icon4d" />
+                    <img class="icon overlay image-slot hidden" id="icon4e" />
+                    <img class="icon overlay image-slot hidden" id="icon4f" />
+                    <img class="icon overlay image-slot hidden" id="icon4g" />
+                    <img class="icon overlay image-slot hidden" id="icon4h" />
+                    <img class="icon overlay image-slot hidden" id="icon4i" />
+                    <img class="icon overlay image-slot hidden" id="icon4j" />
+                    <img class="icon overlay image-slot hidden" id="icon4k" />
+                    <img class="icon overlay image-slot hidden" id="icon4l" />
+                    <img class="icon overlay image-slot hidden" id="icon4m" />
+                    <img class="icon overlay image-slot hidden" id="icon4n" />
+                    <img class="icon overlay image-slot hidden" id="icon4o" />
+                    <img class="icon overlay image-slot hidden" id="icon4p" />
+                    <img class="icon overlay image-slot hidden" id="icon4q" />
+                    <img class="icon overlay image-slot hidden" id="icon4r" />
+                  </div>
+
+                  <div id="honeycomb-row-5">
+                    <img class="icon overlay image-slot hidden" id="icon5a" />
+                    <img class="icon overlay image-slot hidden" id="icon5b" />
+                    <img class="icon overlay image-slot hidden" id="icon5c" />
+                    <img class="icon overlay image-slot hidden" id="icon5d" />
+                    <img class="icon overlay image-slot hidden" id="icon5e" />
+                    <img class="icon overlay image-slot hidden" id="icon5f" />
+                    <img class="icon overlay image-slot hidden" id="icon5g" />
+                    <img class="icon overlay image-slot hidden" id="icon5h" />
+                    <img class="icon overlay image-slot hidden" id="icon5i" />
+                    <img class="icon overlay image-slot hidden" id="icon5j" />
+                    <img class="icon overlay image-slot hidden" id="icon5k" />
+                    <img class="icon overlay image-slot hidden" id="icon5l" />
+                    <img class="icon overlay image-slot hidden" id="icon5m" />
+                    <img class="icon overlay image-slot hidden" id="icon5n" />
+                    <img class="icon overlay image-slot hidden" id="icon5o" />
+                    <img class="icon overlay image-slot hidden" id="icon5p" />
+                    <img class="icon overlay image-slot hidden" id="icon5q" />
+                    <img class="icon overlay image-slot hidden" id="icon5r" />
+                    <img class="icon overlay image-slot hidden" id="icon5s" />
+                    <img class="icon overlay image-slot hidden" id="icon5t" />
+                    <img class="icon overlay image-slot hidden" id="icon5u" />
+                    <img class="icon overlay image-slot hidden" id="icon5v" />
+                    <img class="icon overlay image-slot hidden" id="icon5w" />
+                    <img class="icon overlay image-slot hidden" id="icon5x" />
+                    <img class="icon overlay image-slot hidden" id="icon5y" />
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <!-- Introduction -->
+          <div class="intro">
+            <div class="intro-title">
+              Introducing <br/>
+              <span class="logo-color" id="logo-w">E</span>
+              <span class="logo-color" id="logo-3">E</span>
+              <span class="logo-color" id="logo-m">E</span>
+              <span class="logo-color" id="logo-e">E</span>
+            </div>
+
+            <div class="paragraph word-big-font">
+              <span class="inline-block">
+                <span class="logo-font" id="logo-w">E</span>
+                <span class="logo-font" id="logo-3">E</span>
+                <span class="logo-font" id="logo-m">E</span>
+                <span class="logo-font" id="logo-e">E</span>
+              </span>
+              work closely with teams and projects on strategy,
+              tokenomics and go-to-market.
+              <br />
+              <br />
+              <span class="a-b-testing">
+                We specialize in running marketing campaigns, helping teams
+                iterate until we find product-market fit.
+              </span>
+              <br />
+              <br />
+              Press Start to begin.
+            </div>
+
+            <img src="img/assets/feelspngpixel2.png" alt="pepe walking towards the web3 land" />
+            <div class="word-big-font"> March towards web3, we shall</div>
+            <div class="paragraph post-credits">P.S. This is an evolving product. Follow us as we continue to build.
+            </div>
+          </div>
+        </div>
+
+        <div class="game-boy">
+          <div class="game-boy-control">
+            <div class="left-control">
+              <div class="center-btn">
+                <div class="ctl-sq overlay-btn" id="middle-btn"></div>
+                <div class="ctl-sq overlay-btn" id="top-btn"></div>
+
+                <div class="ctl-sq overlay-btn" id="right-btn"></div>
+
+                <div class="ctl-sq overlay-btn" id="bottom-btn"></div>
+                <div class="ctl-sq overlay-btn" id="left-btn"></div>
+              </div>
+            </div>
+
+            <div class="middle-control">
+              <div class="grey-box"></div>
+              <div class="grey-box"></div>
+              <div class="grey-box"></div>
+
+              <div class="select-start-wrapper">
+                <div class="select-start-container">
+                  <button class="select-button"></button>
+                  <button class="start-button"></button>
+                </div>
+              </div>
+
+              <div class="grey-box"></div>
+            </div>
+
+            <div class="right-control">
+              <div class="b-a-buttons-top"></div>
+
+              <div class="b-a-buttons">
+                <div class="b-button-container">
+                  <a href="https://twitter.com" target="_blank" class="b-button flashing">
+                    <img class="twitter-icon" src="img/assets/twitter.png" alt="twitter link">
+                  </a>
+                </div>
+                <div class="a-button-container">
+                  <a href="https://twitter.com" target="_blank" class="a-button flashing">
+                    <img class="document-icon" src="img/assets/document.png" alt="documentation link">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button - creme de la creme -->
+      <div class="start-container">
+        <label for="startBtn" class="start-toggle">
+          <input type="checkbox" id="startBtn"/>
+          <div class="start-bg">
+            <span class="start-word">start</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <script src="buttons.js"></script>
+    <script src="icon.js"></script>
+    <script src="random.js"></script>
+  </body>
+</html>
