@@ -313,7 +313,6 @@ input:checked + .slider:before {
 .left-control {
   height: 12rem;
   width: 10rem;
-  /* padding: 40px 20px 20px; */
   display: flex;
   align-items: center; /*align-items = y-axis*/
   justify-content: center; /*justify-content = x-axis*/
@@ -332,11 +331,6 @@ input:checked + .slider:before {
   background-color: #283136;
   border-radius: 0.3rem;
 }
-
-/* .ctl-sq:hover {
-  cursor: pointer;
-  background-color: #637179;
-} */
 
 .overlay-btn {
   position: absolute;
