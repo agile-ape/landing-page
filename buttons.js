@@ -59,9 +59,11 @@ startBtn.addEventListener('change', function () {
   // == 'false' && checkBox.checked == 'true'
   if(this.checked == true && checkBox.checked == true) {
       gameBoy.style.display="inline-block";
-      startWord.textContent="close"
+      startWord.style.backgroundColor="rgb(88, 88, 88)";
+      startWord.textContent="close";
     } else {
       gameBoy.style.display="none";
+      startWord.style.backgroundColor="#5d5b7e";
       startWord.textContent="start"
     }
   })
