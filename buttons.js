@@ -24,7 +24,7 @@ function hiddenScreen() {
 
 /* if want to set on-off toggle to 0 */
 function starting() {
-  checkBox.checked = false;
+  checkBox.checked = true;
   checkBoxStyle();
 }
 
@@ -40,8 +40,8 @@ function checkBoxStyle() {
       switchBorder.classList.remove('flashing');
     } else {
       onOffSignal.style.setProperty('background-color', '#702323');
-      startWord.style.color = "black"; 
-      startWord.textContent = "start"; 
+      startWord.style.color = "black";
+      startWord.textContent = "start";
       setTimeout(hiddenScreen, 300);
       gameBoy.style.display = 'none';
       startBtn.disabled = true;

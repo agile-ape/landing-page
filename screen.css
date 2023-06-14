@@ -88,7 +88,7 @@
   line-height: 1;
   padding-bottom: 1rem;
   /* -webkit-text-stroke-width: 1px; */
-  text-align: center; 
+  text-align: center;
 }
 
 /* .hero-subtitle {
@@ -112,7 +112,7 @@
 #main {
   /* margin: 5rem 0; */
   /* border: 1px solid #5d5b7e; */
-  border-radius: 24px;  
+  border-radius: 24px;
   /* height: 675vh; main-container height + opening height */
   /* box-shadow: 0.5rem 0.5rem 0 0 #5d5b7e; */
 }
@@ -194,7 +194,7 @@
   height: 7rem;
   width: 7rem;
 
-  
+
 }
 
 .icon {
@@ -234,7 +234,7 @@
 .intro {
   margin-top: 6rem;
   text-align: center;
-  padding: 1rem 0px; /*1rem = 16px*/ 
+  padding: 1rem 0px; /*1rem = 16px*/
 }
 
 .intro-title {
@@ -245,7 +245,7 @@
   line-height: 1;
   padding-bottom: 1rem;
   /* -webkit-text-stroke-width: 1px; */
-  text-align: center; 
+  text-align: center;
 }
 
 .intro img {

@@ -11,30 +11,18 @@ body {
 /* gameboy screen - used for toggle later. #8bac0f */
 
 @media screen and (max-width: 640px) {
-  
+
   .outer-box {
     margin: 0.2rem 0 !important;
-    min-width: 350px !important;
+    /* min-width: 320px !important; */
   }
-  
+
   .on-off-signal {
     top: 1rem !important;
     left: 1rem !important;
     height: 0.6rem !important;
     width: 0.6rem !important;
   }
-  /* .left-box, .right-box {
-    height: 0.9rem;
-    width: 0.9rem;
-  }
-
-  .left-box {
-    border-right: 0.3rem;
-  }
-
-  .right-box {
-    border-left: 0.3rem;
-  } */
 
   .game {
     margin: 0.2rem 0.6rem !important;
@@ -43,14 +31,15 @@ body {
   }
 
   .game-screen {
-    padding: 0 0.2rem !important;
+    padding: 0 4rem !important;
      /*-ms-overflow-style: none; /* Internet Explorer 10+ */
-    /* scrollbar-width: none; /* Firefox */ 
+    /* scrollbar-width: none; /* Firefox */
   }
 
   .game-screen::-webkit-scrollbar {
     display: none;
   }
+
 
   .hero-title {
     font-size: 3rem;
@@ -63,9 +52,40 @@ body {
   .word-big-font {
     font-size: 2rem;
   }
+
+  .game-boy {
+    width: 100% !important;
+    margin: 0 1rem !important;
+  }
+
+  .left-control, .middle-control {
+    width: 33% !important;
+  }
+
+  .right-control {
+    width: 34% !important;
+  }
+
+  .center-btn, .ctl-sq {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
+  }
+
+  #middle-btn {
+    height: 1.75rem !important;
+    width: 1.75rem !important;
+  }
+
+  .grey-box {
+    height: 0.5rem !important;
+  }
+
+  /* .b-button, .a-button {
+    height: 2rem !important;
+    width: 2rem !important;
+  } */
+
 }
-
-
 
 
 .outer-box {
@@ -216,8 +236,8 @@ input:checked + .slider:before {
 
   /*
   -ms-overflow-style: none; /* Internet Explorer 10+ */
-  /* scrollbar-width: none; /* Firefox */ 
-  
+  /* scrollbar-width: none; /* Firefox */
+
 }
 
 /* ::-webkit-scrollbar {
@@ -272,7 +292,7 @@ input:checked + .slider:before {
   position: absolute;
   left: 50%;
   bottom: 0%;
-  transform: translate(-55%, 0); 
+  transform: translate(-55%, 0);
   z-index: 99;
 
   display: none;
@@ -285,6 +305,7 @@ input:checked + .slider:before {
 
 .game-boy-control {
   display: flex;
+  justify-content: space-between;
   background-color: #626b7a;
   border-radius: 1rem;
 }
@@ -548,11 +569,11 @@ input:checked + .slider:before {
   border-radius: 1rem;
   background-color: #5d5b7e;
   font-family: 'VT323', monospace;
-  
+
   text-transform: uppercase;
   font-size: 1.5rem;
   color: black;
-  padding: 0.5rem 1.5rem; 
+  padding: 0.5rem 1.5rem;
   z-index: 1;
   transform: translate(0,-0.4rem);
   will-change: transform;
