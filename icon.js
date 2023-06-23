@@ -1,6 +1,3 @@
-
-console.log('ready4');
-
 const word1 = document.querySelector('#word1')
 const word2 = document.querySelector('#word2')
 const word3 = document.querySelector('#word3')
@@ -74,20 +71,30 @@ const icon5w = document.querySelector('#icon5w')
 const icon5x = document.querySelector('#icon5x')
 const icon5y = document.querySelector('#icon5y')
 
-
-
+const introSection = document.querySelector('.intro');
+const logoW = document.querySelector('#logo-w-e');
+const logo3 = document.querySelector('#logo-3-e');
+const logoM = document.querySelector('#logo-m-e');
+const logoE = document.querySelector('#logo-e-e');
 
 const viewportHeight = window.gameScreen.innerHeight || document.documentElement.clientHeight;
-
 const viewportCenter = viewportHeight / 2;
-
 const wordDisappear = viewportHeight / 10 * 4;
 
-
+window.gameScreen.addEventListener("scroll", function() {
+  if(introSection.getBoundingClientRect().top < viewportHeight / 2) {
+    logoW.style.transform = 'rotate(-90deg)';
+    logo3.style.transform = 'rotate(180deg)';
+    logoM.style.transform = 'rotate(90deg)';
+  } else {
+    logoW.style.transform = 'none';
+    logo3.style.transform = 'none';
+    logoM.style.transform = 'none';
+  }
+})
 
 // word1
 window.gameScreen.addEventListener("scroll", function() {
-  console.log('im here');
   if(word1.getBoundingClientRect().top < viewportHeight / 2) {
     word1.classList.add('hidden');
   } else {

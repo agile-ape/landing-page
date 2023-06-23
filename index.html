@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>w3me 🎮</title>
+    <!-- favicon to be added -->
+    <link rel="icon" type="image/x-icon" href="img/assets/w3me-favicon.png">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -31,6 +33,7 @@
               <input type="checkbox" id="checkBox" />
               <span class="slider"></span>
             </label>
+            <audio id="startSound" src="start-sound.mp3"></audio>
           </div>
           <span class="on-btn">on</span>
         </div>
@@ -42,17 +45,6 @@
       <!-- Game -->
       <div class="game">
         <div class="game-screen">
-          <!-- Flashing arrow -->
-          <!-- <img
-            id="scrollUp"
-            class="arrow flashing arrow-up"
-            src="img/assets/arrow-up.svg"
-          />
-          <img
-            id="scrollDown"
-            class="arrow flashing arrow-down"
-            src="img/assets/arrow-down.svg"
-          /> -->
           <!-- Hero -->
           <div class="hero-section">
             <div class="logo-main">
@@ -71,12 +63,14 @@
               In web3, projects build in the open
             </div>
 
+            <div class="center">
+              <img src="img/assets/scroll-down.svg" class="icon flashing"/>
+            </div>
+
             <div class="main-container">
-              <!-- <div class="main-overlay"> -->
               <div class="front-container">
                 <div class="word-spacing">
                   <div id="word1" class="word-big-font">
-                    <!-- need a separate div to get the center of word -->
                     Anyone can build the next big thing
                   </div>
                 </div>
@@ -196,7 +190,6 @@
                   </div>
                 </div>
               </div>
-              <!-- </div> -->
             </div>
           </div>
 
@@ -204,10 +197,12 @@
           <div class="intro">
             <div class="intro-title">
               Introducing <br/>
-              <span class="logo-color" id="logo-w">E</span>
-              <span class="logo-color" id="logo-3">E</span>
-              <span class="logo-color" id="logo-m">E</span>
-              <span class="logo-color" id="logo-e">E</span>
+              <div class="intro-logo">
+                <span class="logo-color" id="logo-w-e">E</span>
+                <span class="logo-color" id="logo-3-e">E</span>
+                <span class="logo-color" id="logo-m-e">E</span>
+                <span class="logo-color" id="logo-e-e">E</span>
+              </div>
             </div>
 
             <div class="paragraph word-big-font">
@@ -217,7 +212,7 @@
                 <span class="logo-font" id="logo-m">E</span>
                 <span class="logo-font" id="logo-e">E</span>
               </span>
-              [wag-mi🔉] work closely with teams on strategy,
+              [web3-me, or wag-mi😉] work closely with teams on strategy,
               tokenomics and go-to-market.
               <br />
               <br />
@@ -230,8 +225,8 @@
               Press the <span class="logo-color">Start</span> button to begin.
             </div>
 
-            <img src="img/assets/feelspngpixel2.png" alt="pepe walking towards the web3 land" />
-            <div class="word-big-font"> March towards web3, we shall</div>
+            <img src="img/assets/feelsgood.png" alt="pepe walking towards the web3 land" />
+            <div class="word-big-font"> Join us? </div>
             <div class="paragraph post-credits">P.S. This is an evolving product. Follow us as we continue to build.
             </div>
           </div>
@@ -241,12 +236,19 @@
           <div class="game-boy-control">
             <div class="left-control">
               <div class="center-btn">
-                <div class="ctl-sq overlay-btn" id="middle-btn"></div>
-                <div class="ctl-sq overlay-btn" id="top-btn"></div>
+                <a href="https://t.me/agileape" target="_blank" class="ctl-sq overlay-btn active-btn" id="middle-btn">
+                  <img class="telegram-icon" src="img/assets/telegram.png" alt="telegram-link">
+                </a>
+
+                <div class="ctl-sq overlay-btn active-btn" id="top-btn">
+                  <img class="arrow-up-icon" src="img/assets/arrow-up.png" alt="scroll-top">
+                </div>
 
                 <div class="ctl-sq overlay-btn" id="right-btn"></div>
 
-                <div class="ctl-sq overlay-btn" id="bottom-btn"></div>
+                <div class="ctl-sq overlay-btn active-btn" id="bottom-btn">
+                  <img class="arrow-down-icon" src="img/assets/arrow-down.png" alt="scroll-bottom">
+                </div>
                 <div class="ctl-sq overlay-btn" id="left-btn"></div>
               </div>
             </div>
@@ -258,8 +260,9 @@
 
               <div class="select-start-wrapper">
                 <div class="select-start-container">
-                  <button class="select-button"></button>
-                  <button class="start-button"></button>
+                  <span class="prompt">game on</span>
+                  <!-- <button class="select-button"></button>
+                  <button class="start-button"></button> -->
                 </div>
               </div>
 
@@ -267,17 +270,15 @@
             </div>
 
             <div class="right-control">
-              <div class="b-a-buttons-top"></div>
-
               <div class="b-a-buttons">
                 <div class="b-button-container">
-                  <a href="https://twitter.com" target="_blank" class="b-button flashing">
-                    <img class="twitter-icon" src="img/assets/twitter.png" alt="twitter link">
+                  <a href="https://twitter.com/agileape_" target="_blank" class="b-button active-btn flashing" id="tweet-button">
+                    <img class="twitter-icon" src="img/assets/twitter.png" alt="twitter-link">
                   </a>
                 </div>
                 <div class="a-button-container">
-                  <a href="https://twitter.com" target="_blank" class="a-button flashing">
-                    <img class="document-icon" src="img/assets/document.png" alt="documentation link">
+                  <a href="https://www.notion.so/w3me/Welcome-bee07d03e0d543538e5d2bf76be5aa22" target="_blank" class="a-button active-btn flashing" id="docs-button">
+                    <img class="document-icon" src="img/assets/document.png" alt="documentation-link">
                   </a>
                 </div>
               </div>
